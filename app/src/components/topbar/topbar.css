@@ -1,0 +1,26 @@
+.topbar {
+    margin: 16px 0px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.searchbar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+    border: 1px solid lightgray;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #ece9dd;
+}
+
+.searchbar input {
+    flex: 1;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}

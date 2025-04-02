@@ -1,0 +1,39 @@
+.leftbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 72px;
+    padding: 16px 0px;
+    height: 100vh;
+    border-right: 1px solid lightgray;
+    /* background-color: #DF6D14; */
+    background-color: #E2C275;
+}
+
+.logo {
+    background-color: #C36A2D;
+    border-radius: 50%;
+}
+
+.menu__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.menu__icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__icon:hover {
+    background-color: lightgray;
+    border-radius: 50%;
+}
