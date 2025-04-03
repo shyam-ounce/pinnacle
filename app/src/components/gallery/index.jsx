@@ -1,6 +1,6 @@
-import "./gallery.css";
+import "./style.css";
 import { galleries } from "../../utils/gallery-json";
-import GalleryItems from "../gallery-items/GalleryItems";
+import GalleryItems from "../gallery-items";
 
 const Gallery = () => {
   return (

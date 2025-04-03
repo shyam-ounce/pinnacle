@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./topbar.css";
-import UserButton from "../user-button/UserButton";
+import "./style.css";
+import UserButton from "../user-button";
 
 const Topbar = () => {
   const [search, setSearch] = useState("");

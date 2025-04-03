@@ -1,17 +1,15 @@
+import React from "react";
 import "./app.css";
-import LeftBar from "./components/leftbar/Leftbar";
-import Topbar from "./components/topbar/Topbar";
-import Gallery from "./components/gallery/Gallery";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import routes from "./routes";
+
+const router = createBrowserRouter(routes, { basename: "/" });
 
 const App = () => {
   return (
-    <div className="app">
-      <LeftBar />
-      <div className="content">
-        <Topbar />
-        <Gallery />
-      </div>
-    </div>
+    <React.Suspense fallback={<div>Loading...</div>}>
+      <RouterProvider router={router} />
+    </React.Suspense>
   );
 };
 

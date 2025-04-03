@@ -8,7 +8,7 @@
     width: 72px;
     padding: 16px 0px;
     height: 100vh;
-    border-right: 1px solid lightgray;
+    border-right: 1px solid #ece9dd;
     /* background-color: #DF6D14; */
     background-color: #E2C275;
 }
@@ -34,6 +34,6 @@
 }
 
 .menu__icon:hover {
-    background-color: lightgray;
+    background-color: #ece9dd;
     border-radius: 50%;
 }
