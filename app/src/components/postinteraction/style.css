@@ -1,0 +1,22 @@
+.post__interaction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.interaction__icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.post__interaction button {
+    background-color: #E2C275;
+    color: #ece9dd;
+    border: none;
+    border-radius: 24px;
+    padding: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
