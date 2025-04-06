@@ -1,0 +1,21 @@
+{
+  "name": "pinnacle-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch --env-file=.env index.js",
+    "start": "node --watch --env-file=.env index.js",
+    "seed": "node --env-file=.env utils/seed.js"
+  },
+  "keywords": [],
+  "author": "shyam-ounce",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2"
+  }
+}
