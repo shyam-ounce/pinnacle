@@ -32,6 +32,7 @@ const Createpage = () => {
           <div className="create__form__item">
             <label htmlFor="description">Description</label>
             <textarea
+              aria-label="description"
               rows={6}
               type="text"
               name="dscription"
@@ -45,7 +46,7 @@ const Createpage = () => {
           </div>
           <div className="create__form__item">
             <label htmlFor="link">Board</label>
-            <select name="board" id="board">
+            <select name="board" id="board" aria-label="board">
               <option>Choose a board</option>
               <option value="1">Board 1</option>
               <option value="2">Board 2</option>

@@ -1,14 +1,24 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./style.css";
+import Image from "../image";
 import UserButton from "../user-button";
 
 const Topbar = () => {
+  const navigate = useNavigate();
   const [search, setSearch] = useState("");
+
+  const handleSubmit = (e) => {
+    console.log("first");
+    e.preventDefault();
+    navigate(`/search?search=${e.target[0].value}`);
+  };
+
   return (
     <div className="topbar">
       {/* Search */}
-      <div className="searchbar">
-        <img src="/general/search.svg" alt="Search" />
+      <form onSubmit={handleSubmit} className="searchbar">
+        <Image path="/general/search.svg" alt="Search" />
         <input
           type="text"
           placeholder="Search"
@@ -16,7 +26,7 @@ const Topbar = () => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-      </div>
+      </form>
       {/* User */}
       <UserButton />
     </div>
